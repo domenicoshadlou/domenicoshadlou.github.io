@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "Didot LT Std Headline";
+    src: url("../fonts/DidotLTStd-Headline.otf");
+}
+
+@font-face {
+    font-family: "ProximaNovaRegular";
+    src: url("../fonts/ProximaNovaRegular.ttf");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+
+    background-color: #96a9b0;
+}
+
+.phrase {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+
+    color: white;
+    word-break: keep-all;
+    font-size: 39px;
+    font-family: "Didot LT Std Headline";
+}
+
+.phrase span {
+    position: relative;
+    left: 50%;
+
+    font-size: 19px;
+    font-family: "Didot LT Std Headline";
+}
+
+.phrase b {
+    font-family: "ProximaNovaRegular";
+}
+
+.nav-rows {
+    position: absolute;
+    top: 70%;
+    right: 11%;
+
+    line-height: 2em;
+}
+
+.nav-rows div {
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px 7px 2px 7px;
+    border-radius: 7px;
+    background-color: rgba(100, 100, 100, 0.5);
+    text-align: center;
+}
+
+.nav-rows a:link,
+.nav-rows a:active,
+.nav-rows a:hover,
+.nav-rows a:visited {
+    color: #96a9b0;
+    text-decoration: none;
+    font-size: 29px;
+    font-family: "ProximaNovaRegular";
+}
+
+.name {
+    position: absolute;
+    bottom: 2%;
+    right: 11%;
+    z-index: 1;
+    font-size: 4em;
+    color: rgba(100, 100, 100, 0.5);
+}
+
+img.head {
+    position: absolute;
+    height: 100%;
+    left: 5%;
+}
+
+@media screen and (max-width: 1404px) {
+    .phrase {
+        left: auto;
+        right: 10%;
+        top: 4%;
+    }
+
+    .name {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    img.head {
+        left: -2%;
+    }
+
+    .phrase {
+        z-index: 1;
+    }
+
+    .nav-rows {
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .phrase {
+        top: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background: transparent url("../img/portfolio/head.jpg") no-repeat bottom;
+        background-size: auto 80%;
+    }
+    .cont {
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(100, 100, 100, 0.4);
+    }
+
+    .cont .phrase {
+        position: relative;
+        float: left;
+        top: 12%;
+        left: 50%;
+        right: auto;
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+        transform: translate(-50%);
+        font-size: 3em;
+    }
+
+    .cont .phrase b {
+        color: transparent!important;
+    }
+
+    .cont .name {
+        color: #96a9b0;
+        font-size: 4.5em;
+        text-align: center;
+        right: auto;
+        left: auto;
+        width: 100%;
+        bottom: 5%;
+    }
+
+    .nav-rows {
+        top: 50%;
+        left: 50%;
+        right: auto;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .nav-rows div {
+        margin-top: 20px;
+        padding: 16px 24px 4px 24px;
+        background-color: #96a9b0;
+        color: rgba(100, 100, 100, 0.5);
+    }
+
+    .nav-rows a:link,
+    .nav-rows a:active,
+    .nav-rows a:hover,
+    .nav-rows a:visited {
+        color: rgba(100, 100, 100, 0.5);
+        text-decoration: none;
+        font-size: 50px;
+        font-family: "ProximaNovaRegular";
+    }
+    
+    img.head {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .cont .phrase {
+        font-size: 2em;
+    }
+
+    .cont .phrase span {
+        font-size: 16px;
+    }
+
+    .nav-rows div {
+        padding: 8px 16px 0 16px;
+    }
+
+    .nav-rows a:link,
+    .nav-rows a:active,
+    .nav-rows a:hover,
+    .nav-rows a:visited {
+        color: rgba(100, 100, 100, 0.5);
+        text-decoration: none;
+        font-size: 2em;
+        font-family: "ProximaNovaRegular";
+    }
+
+    .cont .name {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cont .phrase {
+        font-size: 1.5em;
+    }
+
+    .cont .phrase span {
+        font-size: 13px;
+    }
+
+    .cont .name {
+        font-size: 2.2em;
+    }
+}
